@@ -179,7 +179,7 @@ img {
     position: relative;
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
