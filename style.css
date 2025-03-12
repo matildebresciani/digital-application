@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main-font: "Fira Code", serif;
+    --primary-green: #81987F;
+    --primary-light: #FAF8F2;
+    --secondary-green: #ACB9AD;
+    --secondary-light: #E0DCD1;
+    --hover-transition: 0.4s ease;
+    --scroll-transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    font-family: var(--main-font);
+    overflow-x: hidden;
+    
+}
+
+body {
+    background-color: var(--primary-light);
+}
+
+/* Scroll indicator container */
+.scroll-indicator {
+    position: fixed; /* Fastgør til højre side af skærmen */
+    top: 50%; /* Centrerer vertikalt på skærmen */
+    right: 10px; /* Ligger 10px fra højre side */
+    height: 100px; /* Højden på indikatoren */
+    width: 12px; /* Bredden på indikatoren */
+    background-color: var(--secondary-light); /* Lys baggrund */
+    border-radius: 10px; /* Rundede hjørner */
+    transform: translateY(-50%); /* Centrerer elementet */
+    z-index: 99;
+}
+
+/* Scroll thumb, den del der bliver fyldt op */
+.scroll-indicator-thumb {
+    height: 0; /* Initialt er højde 0 */
+    background-color: var(--primary-green); /* Farve på indikatorlinjen */
+    border-radius: 10px; /* Rundede hjørner */
+    transition: height 0.25s ease-out; /* Glat animation */
+    z-index: 100;
+}
+
+
+h1 {
+    font-weight: 400;
+    color: var(--primary-green);
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    color: var(--primary-green);
+    font-weight: 500;
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: 400;
+    color: var(--primary-green);
+    font-size: 24px;
+}
+
+p {
+    font-weight: 400;
+    max-width: 65ch;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#section1, #section2, #section4, #section5 {
+    min-height: 100vh;
+    position: relative;
+}
+
+#section1 {
+    position: relative;
+    opacity: 0;
+    transform: translateY(60px); /* Ligesom kortene starter nedenfra */
+    transition: opacity 1.5s ease-out, transform 0.8s ease-out;
+    padding-bottom: 5rem;
+}
+
+  
+  #section1.visible {
+    opacity: 1;
+    transform: translateY(0); /* Kommer op på sin oprindelige position */
+  }
+  
+
+#section1 h1 {
+
+    top: 15%;
+    right: 35%;
+    /* transform: translate(0, -50%); */
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+
+#section1 p {
+    font-size: 24px;
+    opacity: 0;
+    z-index: 1;
+    transform: translateY(20px);
+    transition: var(--scroll-transition);
+}
+
+#section1 p.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+#section1 img {
+    /* transform: translateY(-50%); */
+    z-index: 0;
+    width: 300px;
+}
+
+#section2 {
+    padding-bottom: 5rem;
+}
+
+.section2_grid img {
+    width: 400px;
+    justify-self: center;
+}
+
+
+/* Kompetencer Grid - Ensretter card layout */
+.kompetencer_grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Én kolonne per række */
+    gap: 5rem; /* Afstand mellem cards */
+}
+
+.kompetencer_card {
+    padding: 2rem;
+    margin: 1rem 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(40px); /* Starter lidt nede */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+
+
+/* Animer kortene, når de scroller ind */
+
+.kompetencer_card.visible {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+#section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-type: y mandatory;
+
+    h1 {
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+}
+
+
+
+
+#projekt1, #projekt2 {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.projekt_content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Glidende overgang for baggrundsfarve, når den ændrer sig */
+}
+
+#projekt1 {
+    background-image: url(img/hcbygaia.jpg);
+}
+
+
+#projekt2 {
+    background-image: url(img/todo.jpg);
+}
+
+#projekt1 h2 , #projekt2 h2 {
+    background-color: #faf8f2cd;
+    display: inline-block;
+    padding: 5px;
+}
+
+#projekt1 p , #projekt2 p {
+    color: var(--primary-light);
+    font-size: 16px;
+  margin: 2rem 0 2rem 0;
+}
+
+
+
+
+#section5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section5 p {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block
+}
+
+.btn a {
+    color: var(--primary-light);
+    text-decoration: none;
+    background-color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+    padding: 8px 15px;
+    /* border-radius: 50px; */
+    transition: var(--hover-transition);
+    display: inline-block
+}
+
+
+.btn:hover a{
+    color: var(--primary-green);
+    background-color: var(--primary-light);
+}
+
+.icon_container {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.icon{
+    transition: var(--hover-transition);
+    width: 60px;
+    height: 60px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.link_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link_container a {
+    font-size: 20px;
+    color: #81987F;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    #section1 h1 {
+        margin-top: 1rem;
+        font-size: 50px;
+     }
+
+
+    #section1 p{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+    }
+    #section1 div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #section1 img {
+        width: 350px;
+    }
+
+    .section2_grid {
+        display: grid;
+    }
+
+    .section2_grid p {
+        max-width: 350px;
+        justify-self: center;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .section2_grid img {
+        width: 350px;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+    
+    .kompetencer_grid {
+        grid-template-columns: 1fr; /* En enkelt kolonne på små skærme */
+        gap: 0;
+    }
+    .kompetencer_card {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    #section5 p {
+        padding: 1.5rem;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+
+    #section1 h1 {
+        font-size: 70px;
+        position: absolute;
+    }
+
+    #section1 p {
+        position: absolute;
+    }
+
+    #section1 p:nth-child(2) {
+        top: 40%;
+        left: 20%;
+    }
+    
+    #section1 p:nth-child(3) {
+        top: 50%;
+        left: 40%;
+    }
+    
+    #section1 p:nth-child(4) {
+        top: 60%;
+        left: 25%;
+    }
+
+    #section1 img {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 400px;
+    }
+
+    .section2_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .section2_grid img {
+        justify-self: right;
+    }
+
+
+    .section2_grid p {
+        max-width: 350px;
+    }
+   
+
+/* Kompetencer Grid - Ensretter card layout */
+.kompetencer_grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Én kolonne per række */
+    gap: 5rem; /* Afstand mellem cards */
+    margin: 4rem 10%; /* Margin rundt om grid */
+}
+
+.kompetencer_card {
+    padding: 2rem;
+    width: 60%; /* Øg bredden på kortene */
+    margin: 1rem 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(40px); /* Starter lidt nede */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+
+    /* Forskudt venstre og højre placering af cards */
+.kompetencer_card:nth-child(odd) {
+    left: -10%; /* Placerer de ulige kort til venstre */
+}
+
+.kompetencer_card:nth-child(even) {
+    left:45%; /* Placerer de lige kort til højre */
+}
+
+#projekt1 div , #projekt2 div {
+    margin-left: 7rem;
+}
+
+#projekt1 .btn , #projekt2 .btn {
+    margin-left: 0;
+}
+
+
+}
