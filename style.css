@@ -332,6 +332,7 @@ img {
         &:hover {
             color: var(--primary-light);
             background-color: transparent;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
         }
     }
@@ -370,6 +371,7 @@ img {
 
 header {
     background-color: var(--bg-transparent);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 1rem;
@@ -527,6 +529,7 @@ a:hover {
             display: none;
             flex-direction: column;
             background-color: var(--bg-transparent);
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid var(--primary-green);
             padding: 0.5rem;
