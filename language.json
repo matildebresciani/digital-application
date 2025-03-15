@@ -1,0 +1,192 @@
+{
+    "header": {
+      "navItems": {
+        "dk": ["Om Mig", "Kompetencer", "Portfolio", "Kontakt"],
+        "en": ["About Me", "Skills", "Portfolio", "Contact"]
+      },
+      "button": {
+        "dk": "Om Mig",
+        "en": "About Me"
+      }
+    },
+    "section1": {
+      "title": {
+        "dk": "&lt;Matilde Bresciani/&gt;",
+        "en": "&lt;Matilde Bresciani/&gt;"
+      },
+      "description": {
+        "dk": "Multimediedesigner\nFrontend Udvikling\nFrontend Design",
+        "en": "Multimedia Designer\nFrontend Development\nFrontend Design"
+      }
+    },
+    "section2": {
+      "title": {
+        "dk": "&lt;Hvem er jeg?/&gt;",
+        "en": "&lt;Who am I?/&gt;"
+      },
+      "paragraph": {
+        "dk": "Hej, jeg hedder Matilde, og jeg er en\n<strong>multimediedesigner</strong> med en passion for\n<strong>frontend udvikling</strong> og\n<strong>frontend design</strong>. Jeg brænder for at udvikle\nbrugervenlige digitale løsninger, og dette er noget jeg drømmer om\nat beskæftige mig med i mit 10-ugers praktikforløb, som jeg skal i\nfra den 25. august til den 30. oktober. Jeg har erfaring med\n<strong>HTML, CSS, JavaScript</strong> og værktøjer som\n<strong>Figma</strong> og <strong>Visual Studio Code</strong>, og\njeg er altid ivrig efter at lære nye teknologier og metoder. Jeg\nser frem til at bruge min kreativitet og tekniske færdigheder i et\nprofessionelt miljø, hvor jeg kan udvikle mig og bidrage til\nspændende frontend-projekter.",
+        "en": "Hi, my name is Matilde, and I am a\n<strong>multimedia designer</strong> with a passion for\n<strong>frontend development</strong> and\n<strong>frontend design</strong>. I am passionate about developing\nuser-friendly digital solutions, and this is something I dream about\npursuing in my 10-week internship from August 25th to October 30th. I\nhave experience with <strong>HTML, CSS, JavaScript</strong>, and tools like\n<strong>Figma</strong> and <strong>Visual Studio Code</strong>, and\nI am always eager to learn new technologies and methods. I look\nforward to applying my creativity and technical skills in a professional\nenvironment where I can develop and contribute to exciting frontend projects."
+      }
+    },
+    "section3": {
+      "title": {
+        "dk": "&lt;Kompetencer/&gt;",
+        "en": "&lt;Skills/&gt;"
+      },
+      "cards": [
+        {
+          "title": {
+            "dk": "&lt;VS Code/&gt;",
+            "en": "&lt;VS Code/&gt;"
+          },
+          "description": {
+            "dk": "Jeg anvender Visual Studio Code som min primære kodeeditor og\ngør brug af relevante extensions, såsom\n<strong>Prettier</strong> og <strong>Figma for VS Code</strong>,\nfor at optimere min arbejdsproces.",
+            "en": "I use Visual Studio Code as my primary code editor and\nmake use of relevant extensions, such as\n<strong>Prettier</strong> and <strong>Figma for VS Code</strong>,\nto optimize my workflow."
+          }
+        },
+        {
+          "title": {
+            "dk": "&lt;HTML/&gt;",
+            "en": "&lt;HTML/&gt;"
+          },
+          "description": {
+            "dk": "Jeg bruger HTML for at skabe en struktureret kode, hvilket gør\ndet nemmere at arbejde med CSS og JavaScript.",
+            "en": "I use HTML to create structured code, making it easier to work\nwith CSS and JavaScript."
+          }
+        },
+        {
+          "title": {
+            "dk": "&lt;CSS/&gt;",
+            "en": "&lt;CSS/&gt;"
+          },
+          "description": {
+            "dk": "Jeg styler mine sider med CSS, hvor benytter teknikker som\nFlexbox og Grid til at skabe responsive layouts gennem media og\ncontainer queries. Derudover arbejder jeg med CSS\nvariable/custom properties for at sikre en ensartet stil og\nletlæselig kode.",
+            "en": "I style my pages with CSS, using techniques like\nFlexbox and Grid to create responsive layouts through media\nand container queries. I also work with CSS\nvariables/custom properties to ensure a consistent style and\nreadable code."
+          }
+        },
+        {
+          "title": {
+            "dk": "&lt;JavaScript/&gt;",
+            "en": "&lt;JavaScript/&gt;"
+          },
+          "description": {
+            "dk": "Jeg anvender JavaScript til at gøre mine projekter interaktive\nog arbejder herunder med funktioner, variabler og moduler for at\nholde min kode struktureret.",
+            "en": "I use JavaScript to make my projects interactive,\nand work with functions, variables, and modules to keep my code\nstructured."
+          }
+        },
+        {
+          "title": {
+            "dk": "&lt;Astro/&gt;",
+            "en": "&lt;Astro/&gt;"
+          },
+          "description": {
+            "dk": "Til større projekter benytter jeg Astro, især når der arbejdes i\nteams, da det gør komponentbaseret kodning og optimering af\narbejdsprocesser langt mere effektivt.",
+            "en": "For larger projects, I use Astro, especially when working in\nteams, as it makes component-based coding and process optimization\nmuch more efficient."
+          }
+        },
+        {
+          "title": {
+            "dk": "&lt;Git & GitHub/&gt;",
+            "en": "&lt;Git & GitHub/&gt;"
+          },
+          "description": {
+            "dk": "En fast del af min rutine når jeg koder, er at bruge Git og\nGitHub. Det bruger jeg til at holde styr på kodeændringer, samt\nat det gør det nemt at gemme, dele og samarbejde om projekter.\nJeg har erfaring med branches og push/pull requests for at sikre\nen arbejdsproces uden for mange konflikter.",
+            "en": "A regular part of my coding routine is using Git and\nGitHub. I use it to track code changes, and it makes it easy to\nsave, share, and collaborate on projects. I have experience\nwith branches and push/pull requests to ensure a smooth workflow\nwith minimal conflicts."
+          }
+        },
+        {
+          "title": {
+            "dk": "&lt;Netlify/&gt;",
+            "en": "&lt;Netlify/&gt;"
+          },
+          "description": {
+            "dk": "Mine projekter plejer jeg at hoste på Netflify, hvilket sikrer\nen nem deployment-proces med automatisk opdatering fra Git.",
+            "en": "I typically host my projects on Netlify, ensuring\na smooth deployment process with automatic updates from Git."
+          }
+        },
+        {
+          "title": {
+            "dk": "&lt;Figma/&gt;",
+            "en": "&lt;Figma/&gt;"
+          },
+          "description": {
+            "dk": "Som en del af min uddannelse har jeg arbejdet med Figma til\ndesign, prototyper og UI-komponenter. Jeg har erfaring med\ndesignsystemer, wireframes, sitemaps og moodboards for at sikre\nen gennemarbejdet og brugervenlig løsning. Derudover anvender\njeg også Figma's Dev Mode som frontend designer, når jeg skal\nimplementere et figma design i kode.",
+            "en": "As part of my education, I have worked with Figma for\ndesign, prototypes, and UI components. I have experience with\ndesign systems, wireframes, sitemaps, and moodboards to ensure\na thorough and user-friendly solution. Additionally, I also use\nFigma's Dev Mode as a frontend designer when implementing Figma\ndesigns into code."
+          }
+        }
+      ]
+    },
+    "section4": {
+      "title": {
+        "dk": "&lt;Portfolio/&gt;",
+        "en": "&lt;Portfolio/&gt;"
+      },
+      "description": {
+        "dk": "",
+        "en": ""
+      }
+    },
+    "projekt1": {
+      "semester": "2. Semester",
+      "projectName": "&lt;Hair Creations by Gaia/&gt;",
+      "examProject": "Eksamensprojekt",
+      "responsibility": {
+        "dk": "Mit primære ansvar i dette projekt har været at skabe en\nstruktureret kode ved hjælp af Astro, udvikle databasen i Supabase\nog tage billeder der kunne bruges på hjemmesiden og som SoMe\ncontent.",
+        "en": "My primary responsibility in this project has been creating\nstructured code using Astro, developing the database in Supabase,\nand taking photos that could be used on the website and as SoMe\ncontent."
+      },
+      "grade": "Karakter: 12",
+      "link": {
+        "dk": "&lt;Vis Projekt/&gt;",
+        "en": "&lt;View Project/&gt;"
+      }
+    },
+    "projekt2": {
+      "semester": "3. Semester",
+      "projectName": "&lt;To Do App/&gt;",
+      "theme": "Tema: Frontend Logic",
+      "description": {
+        "dk": "Afsluttende opgave på første forløb på frontend valgfaget med\nfokus på at få en bedre forståelse for JavaScript.",
+        "en": "Final assignment in the first part of the frontend elective, focusing\non gaining a better understanding of JavaScript."
+      },
+      "link": {
+        "dk": "&lt;Vis Projekt/&gt;",
+        "en": "&lt;View Project/&gt;"
+      }
+    },
+    "projekt3": {
+      "semester": "1. Semester",
+      "projectName": "&lt;Aabenbar/&gt;",
+      "theme": "Tema 5: Indhold",
+      "description": {
+        "dk": "I dette tema blev vi introduceret til indholdsproduktion samt\nredesign, hvor vi skulle arbejde med Adobe Premiere Pro og filme og\nklippe et interview. Derudover var det vores første case hvor vi\nskulle redesigne et eksisterende site. Min opgave i dette projekt\nvar at filme, tage billeder og udarbejde en 'Book Bord' form til\nhjemmesiden.",
+        "en": "In this theme, we were introduced to content production and\nredesign, where we worked with Adobe Premiere Pro to film and edit an\ninterview. Additionally, it was our first case where we had to\nredesign an existing site. My role in this project was to film,\ntake photos, and create a 'Book Table' form for the website."
+      },
+      "link": {
+        "dk": "&lt;Vis Projekt/&gt;",
+        "en": "&lt;View Project/&gt;"
+      }
+    },
+    "section5": {
+  "title": {
+    "dk": "&lt;Kontakt Mig/&gt;",
+    "en": "&lt;Contact Me/&gt;"
+  },
+  "paragraph": {
+    "dk": "Lyder alt dette spændende for jeres virksomhed? Hvis I søger en\npassioneret frontend designer og udvikler som praktikant til august,\ner I meget velkomne til at kontakte mig på min mail eller LinkedIn.",
+    "en": "Does all of this sound exciting for your company? If you're looking for a\npassionate frontend designer and developer as an intern for August,\nyou are very welcome to contact me via my email or LinkedIn."
+  },
+  "contactLinks": {
+    "email": {
+      "dk": "mailto:matildepio@hotmail.dk",
+      "en": "mailto:matildepio@hotmail.dk"
+    },
+    "linkedin": {
+      "dk": "https://www.linkedin.com/in/matilde-bresciani-3942872b5/",
+      "en": "https://www.linkedin.com/in/matilde-bresciani-3942872b5/"
+    }
+  }
+}
+
+  }
+  

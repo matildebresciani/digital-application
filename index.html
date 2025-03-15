@@ -28,8 +28,8 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <script type="module" src="js.js"></script>
-    <title>Praktik Ansøgning</title>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <title>Digital Portfolio</title>
   </head>
   <body>
     <div class="scroll-indicator"></div>
@@ -49,7 +49,7 @@
         </li>
       </ul>
     </header> -->
-    <header>
+    <header id="header">
       <button id="nav-toggle">
         <span id="active-section">Om Mig</span>
         <span class="arrow">▼</span>
@@ -207,13 +207,89 @@
           <div class="projekt_content">
             <p>3. Semester</p>
             <h2>&lt;To Do App/&gt;</h2>
+            <p>Tema: Frontend Logic</p>
             <p>
               Afsluttende opgave på første forløb på frontend valgfaget med
               fokus på at få en bedre forståelse for JavaScript.
             </p>
-            <p>Tema: Frontend Logic</p>
+
             <div class="btn">
               <a href="https://matilde-to-do-app.netlify.app/" target="_blank"
+                >&lt;Vis Projekt/&gt;</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projekt3">
+        <div class="projekt_content">
+          <p>1. Semester</p>
+          <h2>&lt;Aabenbar/&gt;</h2>
+          <p>Tema 5: Indhold</p>
+          <p>
+            I dette tema blev vi introduceret til indholdsproduktion samt
+            redesign, hvor vi skulle arbejde med Adobe Premiere Pro og filme og
+            klippe et interview. Derudover var det vores første case hvor vi
+            skulle redesigne et eksisterende site. Min opgave i dette projekt
+            var at filme, tage billeder og udarbejde en 'Book Bord' form til
+            hjemmesiden.
+          </p>
+
+          <div class="btn-container">
+            <div class="btn">
+              <a
+                href="https://aabenbar-virksomhedssite.netlify.app/"
+                target="_blank"
+                >&lt;Vis Projekt/&gt;</a
+              >
+            </div>
+            <div class="btn">
+              <button id="openModal">&lt;Se Video/&gt;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popup Modal -->
+      <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div style="padding: 56.25% 0 0 0; position: relative">
+            <iframe
+              id="vimeoPlayer"
+              src="https://player.vimeo.com/video/1066138203?h=2e693b69d5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+              title="interview_3"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <section id="projekt4">
+        <div>
+          <div class="projekt_content">
+            <p>1. Semester</p>
+            <h2>&lt;The Hungry Axolotl/&gt;</h2>
+            <p>Tema 4: Animation</p>
+            <p>
+              I dette tema blev vi introduceret til javascript ved at vi skulle
+              udvikle et spil. Elementerne designede vi i Adobe Illustrator, og
+              derefter gjorde vi det interaktivt ved hjælp af javascript og CSS.
+            </p>
+
+            <div class="btn">
+              <a
+                href="https://the-hungry-axolotl.netlify.app/spil"
+                target="_blank"
                 >&lt;Vis Projekt/&gt;</a
               >
             </div>
@@ -252,5 +328,6 @@
       </section>
     </main>
     <footer></footer>
+    <script type="module" src="js.js"></script>
   </body>
 </html>

@@ -249,47 +249,58 @@ img {
 
 
 
-#projekt1, #projekt2 {
+#projekt1, #projekt2, #projekt3, #projekt4 {
     position: relative;
     height: 100vh;
     background-size: cover;
-    background-position: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
+
+    h2 {
+        background-color: #faf8f2cd;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    p {
+        color: var(--primary-light);
+        font-size: 16px;
+      margin: 2rem 0 2rem 0;
+    }
+
+    .projekt_content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease; /* Glidende overgang for baggrundsfarve, når den ændrer sig */
+    }
 }
 
-.projekt_content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease; /* Glidende overgang for baggrundsfarve, når den ændrer sig */
-}
+
 
 #projekt1 {
     background-image: url(img/hcbygaia.jpg);
+    background-position: 50%;
 }
 
 
 #projekt2 {
     background-image: url(img/todo.jpg);
+    background-position: 70%;
 }
 
-#projekt1 h2 , #projekt2 h2 {
-    background-color: #faf8f2cd;
-    display: inline-block;
-    padding: 5px;
+#projekt3 {
+    background-image: url(img/aabenbar.jpg);
+    background-position: 40%;
 }
 
-#projekt1 p , #projekt2 p {
-    color: var(--primary-light);
-    font-size: 16px;
-  margin: 2rem 0 2rem 0;
+#projekt4 {
+    background-image: url(img/axolotl.jpg);
+    background-position: 50%;
 }
-
-
 
 
 #section5 {
@@ -308,7 +319,7 @@ img {
     margin-bottom: 1.5rem;
     display: inline-block;
 
-    a {
+    a, button {
         color: var(--primary-light);
         text-decoration: none;
         background-color: var(--primary-green);
@@ -316,6 +327,7 @@ img {
         padding: 8px 15px;
         transition: var(--hover-transition);
         display: inline-block;
+        font-size: 16px;
 
         &:hover {
             color: var(--primary-light);
@@ -367,15 +379,11 @@ header {
     margin-inline: auto;
     border: 1px solid var(--primary-green);
     text-align: center;
-}
 
-/* Skjul dropdown-knappen på desktop */
+    /* Skjul dropdown-knappen på desktop */
 button {
     display: none;
-
 }
-
-
 
 /* Navigation */
 ul {
@@ -396,6 +404,77 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+a, button {
+    transition: color 0.3s ease;
+}
+
+}
+
+
+/* Modal background */
+.modal {
+    display: none;  /* Hidden by default */
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+    padding-top: 50px;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Adjust the width to control the modal size */
+    max-width: 800px; /* Optional: set a max width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Vimeo embed */
+  .video-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+
+
 
 
 
@@ -500,6 +579,10 @@ a:hover {
         padding: 1.5rem;
     }
 
+    .modal-content {
+        width: 90%;  /* Får modal til at fylde 90% af skærmen */
+        max-width: none;  /* Fjerner max-width, så det kan fylde mere på små skærme */
+      }
 
 }
 
@@ -581,8 +664,11 @@ a:hover {
     left:45%; /* Placerer de lige kort til højre */
 }
 
-#projekt1 div , #projekt2 div {
-    margin-left: 7rem;
+#projekt1 , #projekt2, #projekt3, #projekt4 {
+    > div {
+
+        margin-left: 7rem;
+    }
 }
 
 #projekt1 .btn , #projekt2 .btn {
