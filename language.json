@@ -1,192 +1,119 @@
 {
-    "header": {
-      "navItems": {
-        "dk": ["Om Mig", "Kompetencer", "Portfolio", "Kontakt"],
-        "en": ["About Me", "Skills", "Portfolio", "Contact"]
-      },
-      "button": {
-        "dk": "Om Mig",
-        "en": "About Me"
-      }
-    },
-    "section1": {
-      "title": {
-        "dk": "&lt;Matilde Bresciani/&gt;",
-        "en": "&lt;Matilde Bresciani/&gt;"
-      },
-      "description": {
-        "dk": "Multimediedesigner\nFrontend Udvikling\nFrontend Design",
-        "en": "Multimedia Designer\nFrontend Development\nFrontend Design"
-      }
-    },
-    "section2": {
-      "title": {
-        "dk": "&lt;Hvem er jeg?/&gt;",
-        "en": "&lt;Who am I?/&gt;"
-      },
-      "paragraph": {
-        "dk": "Hej, jeg hedder Matilde, og jeg er en\n<strong>multimediedesigner</strong> med en passion for\n<strong>frontend udvikling</strong> og\n<strong>frontend design</strong>. Jeg brænder for at udvikle\nbrugervenlige digitale løsninger, og dette er noget jeg drømmer om\nat beskæftige mig med i mit 10-ugers praktikforløb, som jeg skal i\nfra den 25. august til den 30. oktober. Jeg har erfaring med\n<strong>HTML, CSS, JavaScript</strong> og værktøjer som\n<strong>Figma</strong> og <strong>Visual Studio Code</strong>, og\njeg er altid ivrig efter at lære nye teknologier og metoder. Jeg\nser frem til at bruge min kreativitet og tekniske færdigheder i et\nprofessionelt miljø, hvor jeg kan udvikle mig og bidrage til\nspændende frontend-projekter.",
-        "en": "Hi, my name is Matilde, and I am a\n<strong>multimedia designer</strong> with a passion for\n<strong>frontend development</strong> and\n<strong>frontend design</strong>. I am passionate about developing\nuser-friendly digital solutions, and this is something I dream about\npursuing in my 10-week internship from August 25th to October 30th. I\nhave experience with <strong>HTML, CSS, JavaScript</strong>, and tools like\n<strong>Figma</strong> and <strong>Visual Studio Code</strong>, and\nI am always eager to learn new technologies and methods. I look\nforward to applying my creativity and technical skills in a professional\nenvironment where I can develop and contribute to exciting frontend projects."
-      }
-    },
-    "section3": {
-      "title": {
-        "dk": "&lt;Kompetencer/&gt;",
-        "en": "&lt;Skills/&gt;"
-      },
-      "cards": [
-        {
-          "title": {
-            "dk": "&lt;VS Code/&gt;",
-            "en": "&lt;VS Code/&gt;"
-          },
-          "description": {
-            "dk": "Jeg anvender Visual Studio Code som min primære kodeeditor og\ngør brug af relevante extensions, såsom\n<strong>Prettier</strong> og <strong>Figma for VS Code</strong>,\nfor at optimere min arbejdsproces.",
-            "en": "I use Visual Studio Code as my primary code editor and\nmake use of relevant extensions, such as\n<strong>Prettier</strong> and <strong>Figma for VS Code</strong>,\nto optimize my workflow."
-          }
-        },
-        {
-          "title": {
-            "dk": "&lt;HTML/&gt;",
-            "en": "&lt;HTML/&gt;"
-          },
-          "description": {
-            "dk": "Jeg bruger HTML for at skabe en struktureret kode, hvilket gør\ndet nemmere at arbejde med CSS og JavaScript.",
-            "en": "I use HTML to create structured code, making it easier to work\nwith CSS and JavaScript."
-          }
-        },
-        {
-          "title": {
-            "dk": "&lt;CSS/&gt;",
-            "en": "&lt;CSS/&gt;"
-          },
-          "description": {
-            "dk": "Jeg styler mine sider med CSS, hvor benytter teknikker som\nFlexbox og Grid til at skabe responsive layouts gennem media og\ncontainer queries. Derudover arbejder jeg med CSS\nvariable/custom properties for at sikre en ensartet stil og\nletlæselig kode.",
-            "en": "I style my pages with CSS, using techniques like\nFlexbox and Grid to create responsive layouts through media\nand container queries. I also work with CSS\nvariables/custom properties to ensure a consistent style and\nreadable code."
-          }
-        },
-        {
-          "title": {
-            "dk": "&lt;JavaScript/&gt;",
-            "en": "&lt;JavaScript/&gt;"
-          },
-          "description": {
-            "dk": "Jeg anvender JavaScript til at gøre mine projekter interaktive\nog arbejder herunder med funktioner, variabler og moduler for at\nholde min kode struktureret.",
-            "en": "I use JavaScript to make my projects interactive,\nand work with functions, variables, and modules to keep my code\nstructured."
-          }
-        },
-        {
-          "title": {
-            "dk": "&lt;Astro/&gt;",
-            "en": "&lt;Astro/&gt;"
-          },
-          "description": {
-            "dk": "Til større projekter benytter jeg Astro, især når der arbejdes i\nteams, da det gør komponentbaseret kodning og optimering af\narbejdsprocesser langt mere effektivt.",
-            "en": "For larger projects, I use Astro, especially when working in\nteams, as it makes component-based coding and process optimization\nmuch more efficient."
-          }
-        },
-        {
-          "title": {
-            "dk": "&lt;Git & GitHub/&gt;",
-            "en": "&lt;Git & GitHub/&gt;"
-          },
-          "description": {
-            "dk": "En fast del af min rutine når jeg koder, er at bruge Git og\nGitHub. Det bruger jeg til at holde styr på kodeændringer, samt\nat det gør det nemt at gemme, dele og samarbejde om projekter.\nJeg har erfaring med branches og push/pull requests for at sikre\nen arbejdsproces uden for mange konflikter.",
-            "en": "A regular part of my coding routine is using Git and\nGitHub. I use it to track code changes, and it makes it easy to\nsave, share, and collaborate on projects. I have experience\nwith branches and push/pull requests to ensure a smooth workflow\nwith minimal conflicts."
-          }
-        },
-        {
-          "title": {
-            "dk": "&lt;Netlify/&gt;",
-            "en": "&lt;Netlify/&gt;"
-          },
-          "description": {
-            "dk": "Mine projekter plejer jeg at hoste på Netflify, hvilket sikrer\nen nem deployment-proces med automatisk opdatering fra Git.",
-            "en": "I typically host my projects on Netlify, ensuring\na smooth deployment process with automatic updates from Git."
-          }
-        },
-        {
-          "title": {
-            "dk": "&lt;Figma/&gt;",
-            "en": "&lt;Figma/&gt;"
-          },
-          "description": {
-            "dk": "Som en del af min uddannelse har jeg arbejdet med Figma til\ndesign, prototyper og UI-komponenter. Jeg har erfaring med\ndesignsystemer, wireframes, sitemaps og moodboards for at sikre\nen gennemarbejdet og brugervenlig løsning. Derudover anvender\njeg også Figma's Dev Mode som frontend designer, når jeg skal\nimplementere et figma design i kode.",
-            "en": "As part of my education, I have worked with Figma for\ndesign, prototypes, and UI components. I have experience with\ndesign systems, wireframes, sitemaps, and moodboards to ensure\na thorough and user-friendly solution. Additionally, I also use\nFigma's Dev Mode as a frontend designer when implementing Figma\ndesigns into code."
-          }
-        }
+    "da": {
+      "texts": [
+        { "text": "Om Mig", "location": "#nav-menu li:nth-of-type(1) a" },
+        { "text": "Kompetencer", "location": "#nav-menu li:nth-of-type(2) a" },
+        { "text": "Portfolio", "location": "#nav-menu li:nth-of-type(3) a" },
+        { "text": "Kontakt", "location": "#nav-menu li:nth-of-type(4) a" },
+        { "text": "Om Mig", "location": "#active-section" },
+        { "text": "&lt;Matilde Bresciani/&gt;", "location": "#section1 h1" },
+        { "text": "Multimediedesigner", "location": "#section1 p:nth-of-type(1)" },
+        { "text": "Frontend Udvikling", "location": "#section1 p:nth-of-type(2)" },
+        { "text": "Frontend Design", "location": "#section1 p:nth-of-type(3)" },
+        { "text": "&lt;Hvem er jeg/&gt;", "location": "#section2 h1" },
+        { "text": "Hej, jeg hedder Matilde, og jeg er en <strong>multimediedesigner</strong> med en passion for <strong>frontend udvikling</strong> og <strong>frontend design</strong>. Jeg brænder for at udvikle brugervenlige digitale løsninger, og dette er noget jeg drømmer om at beskæftige mig med i mit 10-ugers praktikforløb, som jeg skal i fra den 25. august til den 30. oktober. Jeg har erfaring med <strong>HTML, CSS, JavaScript</strong> og værktøjer som <strong>Figma</strong> og <strong>Visual Studio Code</strong>, og jeg er altid ivrig efter at lære nye teknologier og metoder. Jeg ser frem til at bruge min kreativitet og tekniske færdigheder i et professionelt miljø, hvor jeg kan udvikle mig og bidrage til spændende frontend-projekter.", "location": "#section2 p" },
+        { "text": "&lt;Kompetencer/&gt;", "location": "#section3 h1" },
+        { "text": "&lt;VS Code/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(1) h3" },
+        { "text": "Jeg anvender Visual Studio Code som min primære kodeeditor og gør brug af relevante extensions, såsom Prettier og Figma for VS Code, for at optimere min arbejdsproces.", "location": "#section3 .kompetencer_card:nth-of-type(1) p" },
+        { "text": "&lt;HTML/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(2) h3" },
+        { "text": "Jeg bruger HTML for at skabe en struktureret kode, hvilket gør det nemmere at arbejde med CSS og JavaScript.", "location": "#section3 .kompetencer_card:nth-of-type(2) p" },
+        { "text": "&lt;CSS/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(3) h3" },
+        { "text": "Jeg styler mine sider med CSS, hvor benytter teknikker som Flexbox og Grid til at skabe responsive layouts gennem media og container queries. Derudover arbejder jeg med CSS variable/custom properties for at sikre en ensartet stil og letlæselig kode.", "location": "#section3 .kompetencer_card:nth-of-type(3) p" },
+        { "text": "&lt;JavaScript/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(4) h3" },
+        { "text": "Jeg anvender JavaScript til at gøre mine projekter interaktive og arbejder herunder med funktioner, variabler og moduler for at holde min kode struktureret.", "location": "#section3 .kompetencer_card:nth-of-type(4) p" },
+        { "text": "&lt;Astro/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(5) h3" },
+        { "text": "Til større projekter benytter jeg Astro, især når der arbejdes i teams, da det gør komponentbaseret kodning og optimering af arbejdsprocesser langt mere effektivt.", "location": "#section3 .kompetencer_card:nth-of-type(5) p" },
+        { "text": "&lt;Git & GitHub/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(6) h3" },
+        { "text": "En fast del af min rutine når jeg koder, er at bruge Git og GitHub. Det bruger jeg til at holde styr på kodeændringer, samt at det gør det nemt at gemme, dele og samarbejde om projekter. Jeg har erfaring med branches og push/pull requests for at sikre en arbejdsproces uden for mange konflikter.", "location": "#section3 .kompetencer_card:nth-of-type(6) p" },
+        { "text": "&lt;Netlify/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(7) h3" },
+        { "text": "Mine projekter plejer jeg at hoste på Netflify, hvilket sikrer en nem deployment-proces med automatisk opdatering fra Git.", "location": "#section3 .kompetencer_card:nth-of-type(7) p" },
+        { "text": "&lt;Figma/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(8) h3" },
+        { "text": "Som en del af min uddannelse har jeg arbejdet med Figma til design, prototyper og UI-komponenter. Jeg har erfaring med designsystemer, wireframes, sitemaps og moodboards for at sikre en gennemarbejdet og brugervenlig løsning. Derudover anvender jeg også Figma's Dev Mode som frontend designer, når jeg skal implementere et figma design i kode.", "location": "#section3 .kompetencer_card:nth-of-type(8) p" },
+        { "text": "&lt;Portfolio/&gt;", "location": "#section4 h1" },
+        { "text": "2. Semester", "location": "#projekt1 p:nth-of-type(1)" },
+        { "text": "&lt;Hair Creations by Gaia/&gt;", "location": "#projekt1 h2" },
+        { "text": "Eksamensprojekt", "location": "#projekt1 p:nth-of-type(2)" },
+        { "text": "Mit primære ansvar i dette projekt har været at skabe en struktureret kode ved hjælp af Astro, udvikle databasen i Supabase og tage billeder der kunne bruges på hjemmesiden og som SoMe content.", "location": "#projekt1 p:nth-of-type(3)" },
+        { "text": "Karakter: 12", "location": "#projekt1 p:nth-of-type(4)" },
+        { "text": "&lt;Vis Projekt/&gt;", "location": "#projekt1 .btn a" },
+        { "text": "3. Semester", "location": "#projekt2 p:nth-of-type(1)" },
+        { "text": "&lt;To Do App/&gt;", "location": "#projekt2 h2" },
+        { "text": "Tema: Frontend Logic", "location": "#projekt2 p:nth-of-type(2)" },
+        { "text": "Afsluttende opgave på første forløb på frontend valgfaget med fokus på at få en bedre forståelse for JavaScript.", "location": "#projekt2 p:nth-of-type(3)" },
+        { "text": "&lt;Vis Projekt/&gt;", "location": "#projekt2 .btn a" },
+        { "text": "1. Semester", "location": "#projekt3 p:nth-of-type(1)" },
+        { "text": "&lt;Aabenbar/&gt;", "location": "#projekt3 h2" },
+        { "text": "Tema 5: Indhold", "location": "#projekt3 p:nth-of-type(2)" },
+        { "text": "I dette tema blev vi introduceret til indholdsproduktion samt redesign, hvor vi skulle arbejde med Adobe Premiere Pro og filme og klippe et interview. Derudover var det vores første case hvor vi skulle redesigne et eksisterende site. Min opgave i dette projekt var at filme, tage billeder og udarbejde en 'Book Bord' form til hjemmesiden.", "location": "#projekt3 p:nth-of-type(3)" },
+        { "text": "&lt;Vis Projekt/&gt;", "location": "#projekt3 .btn-container .btn a" },
+        { "text": "&lt;Se Video/&gt;", "location": "#projekt3 .btn-container .btn button" },
+        { "text": "1. Semester", "location": "#projekt4 p:nth-of-type(1)" },
+        { "text": "&lt;The Hungry Axolotl/&gt;", "location": "#projekt4 h2" },
+        { "text": "Tema 4: Animation", "location": "#projekt4 p:nth-of-type(2)" },
+        { "text": "I dette tema blev vi introduceret til JavaScript, og jeg brugte det til at animere figurer og lave små interaktive elementer på en webside.", "location": "#projekt4 p:nth-of-type(3)" },
+        { "text": "&lt;Vis Projekt/&gt;", "location": "#projekt4 .btn a" },
+        { "text": "&lt;Kontakt Mig/&gt;", "location": "#section5 h1" },
+        { "text": "Lyder alt dette spændende for jeres virksomhed? Hvis i søger en passioneret frontend designer og udvikler som praktikant til august, er i meget velkomne til at kontakte mig på min mail eller LinkedIn. ", "location": "#section5 p" }
+
       ]
     },
-    "section4": {
-      "title": {
-        "dk": "&lt;Portfolio/&gt;",
-        "en": "&lt;Portfolio/&gt;"
-      },
-      "description": {
-        "dk": "",
-        "en": ""
-      }
-    },
-    "projekt1": {
-      "semester": "2. Semester",
-      "projectName": "&lt;Hair Creations by Gaia/&gt;",
-      "examProject": "Eksamensprojekt",
-      "responsibility": {
-        "dk": "Mit primære ansvar i dette projekt har været at skabe en\nstruktureret kode ved hjælp af Astro, udvikle databasen i Supabase\nog tage billeder der kunne bruges på hjemmesiden og som SoMe\ncontent.",
-        "en": "My primary responsibility in this project has been creating\nstructured code using Astro, developing the database in Supabase,\nand taking photos that could be used on the website and as SoMe\ncontent."
-      },
-      "grade": "Karakter: 12",
-      "link": {
-        "dk": "&lt;Vis Projekt/&gt;",
-        "en": "&lt;View Project/&gt;"
-      }
-    },
-    "projekt2": {
-      "semester": "3. Semester",
-      "projectName": "&lt;To Do App/&gt;",
-      "theme": "Tema: Frontend Logic",
-      "description": {
-        "dk": "Afsluttende opgave på første forløb på frontend valgfaget med\nfokus på at få en bedre forståelse for JavaScript.",
-        "en": "Final assignment in the first part of the frontend elective, focusing\non gaining a better understanding of JavaScript."
-      },
-      "link": {
-        "dk": "&lt;Vis Projekt/&gt;",
-        "en": "&lt;View Project/&gt;"
-      }
-    },
-    "projekt3": {
-      "semester": "1. Semester",
-      "projectName": "&lt;Aabenbar/&gt;",
-      "theme": "Tema 5: Indhold",
-      "description": {
-        "dk": "I dette tema blev vi introduceret til indholdsproduktion samt\nredesign, hvor vi skulle arbejde med Adobe Premiere Pro og filme og\nklippe et interview. Derudover var det vores første case hvor vi\nskulle redesigne et eksisterende site. Min opgave i dette projekt\nvar at filme, tage billeder og udarbejde en 'Book Bord' form til\nhjemmesiden.",
-        "en": "In this theme, we were introduced to content production and\nredesign, where we worked with Adobe Premiere Pro to film and edit an\ninterview. Additionally, it was our first case where we had to\nredesign an existing site. My role in this project was to film,\ntake photos, and create a 'Book Table' form for the website."
-      },
-      "link": {
-        "dk": "&lt;Vis Projekt/&gt;",
-        "en": "&lt;View Project/&gt;"
-      }
-    },
-    "section5": {
-  "title": {
-    "dk": "&lt;Kontakt Mig/&gt;",
-    "en": "&lt;Contact Me/&gt;"
-  },
-  "paragraph": {
-    "dk": "Lyder alt dette spændende for jeres virksomhed? Hvis I søger en\npassioneret frontend designer og udvikler som praktikant til august,\ner I meget velkomne til at kontakte mig på min mail eller LinkedIn.",
-    "en": "Does all of this sound exciting for your company? If you're looking for a\npassionate frontend designer and developer as an intern for August,\nyou are very welcome to contact me via my email or LinkedIn."
-  },
-  "contactLinks": {
-    "email": {
-      "dk": "mailto:matildepio@hotmail.dk",
-      "en": "mailto:matildepio@hotmail.dk"
-    },
-    "linkedin": {
-      "dk": "https://www.linkedin.com/in/matilde-bresciani-3942872b5/",
-      "en": "https://www.linkedin.com/in/matilde-bresciani-3942872b5/"
-    }
-  }
-}
+    "en": {
+      "texts": [
+        { "text": "About Me", "location": "#nav-menu li:nth-of-type(1) a" },
+        { "text": "Skills", "location": "#nav-menu li:nth-of-type(2) a" },
+        { "text": "Portfolio", "location": "#nav-menu li:nth-of-type(3) a" },
+        { "text": "Contact", "location": "#nav-menu li:nth-of-type(4) a" },
+        { "text": "About Me", "location": "#active-section" },
+        { "text": "&lt;Matilde Bresciani/&gt;", "location": "#section1 h1" },
+        { "text": "Multimedia Designer", "location": "#section1 p:nth-of-type(1)" },
+        { "text": "Frontend Development", "location": "#section1 p:nth-of-type(2)" },
+        { "text": "Frontend Design", "location": "#section1 p:nth-of-type(3)" },
+        { "text": "&lt;Who Am I/&gt;", "location": "#section2 h1" },
+        { "text": "Hi, my name is Matilde, and I am a <strong>multimedia designer</strong> with a passion for <strong>frontend development</strong> and <strong>frontend design</strong>. I am passionate about developing user-friendly digital solutions, and this is something I dream of pursuing during my 10-week internship from August 25th to October 30th. I have experience with <strong>HTML, CSS, JavaScript</strong>, and tools such as <strong>Figma</strong> and <strong>Visual Studio Code</strong>, and I am always eager to learn new technologies and methods. I look forward to using my creativity and technical skills in a professional environment where I can grow and contribute to exciting frontend projects.", "location": "#section2 p" },
+        { "text": "&lt;Skills/&gt;", "location": "#section3 h1" },
+        { "text": "&lt;VS Code/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(1) h3" },
+        { "text": "I use Visual Studio Code as my primary code editor, taking advantage of relevant extensions such as Prettier and Figma for VS Code to optimize my workflow.", "location": "#section3 .kompetencer_card:nth-of-type(1) p" },
+        { "text": "&lt;HTML/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(2) h3" },
+        { "text": "I use HTML to create structured code, which makes it easier to work with CSS and JavaScript.", "location": "#section3 .kompetencer_card:nth-of-type(2) p" },
+        { "text": "&lt;CSS/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(3) h3" },
+        { "text": "I style my pages with CSS, using techniques like Flexbox and Grid to create responsive layouts through media and container queries. I also work with CSS variables/custom properties to ensure a consistent style and readable code.", "location": "#section3 .kompetencer_card:nth-of-type(3) p" },
+        { "text": "&lt;JavaScript/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(4) h3" },
+        { "text": "I use JavaScript to make my projects interactive, working with functions, variables, and modules to keep my code structured.", "location": "#section3 .kompetencer_card:nth-of-type(4) p" },
+        { "text": "&lt;Astro/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(5) h3" },
+        { "text": "For larger projects, I use Astro, especially when working in teams, as it makes component-based coding and process optimization much more efficient.", "location": "#section3 .kompetencer_card:nth-of-type(5) p" },
+        { "text": "&lt;Git & GitHub/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(6) h3" },
+        { "text": "Git and GitHub are essential parts of my workflow. I use them to track code changes, and they make it easy to save, share, and collaborate on projects. I have experience with branches and pull/push requests to ensure a smooth workflow.", "location": "#section3 .kompetencer_card:nth-of-type(6) p" },
+        { "text": "&lt;Netlify/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(7) h3" },
+        { "text": "I typically host my projects on Netlify, which ensures an easy deployment process with automatic updates from Git.", "location": "#section3 .kompetencer_card:nth-of-type(7) p" },
+        { "text": "&lt;Figma/&gt;", "location": "#section3 .kompetencer_card:nth-of-type(8) h3" },
+        { "text": "As part of my education, I have worked with Figma for design, prototypes, and UI components. I have experience with design systems, wireframes, sitemaps, and mood boards to ensure well-executed and user-friendly solutions. I also use Figma's Dev Mode as a frontend designer when implementing a Figma design into code.", "location": "#section3 .kompetencer_card:nth-of-type(8) p" },
+        { "text": "&lt;Portfolio/&gt;", "location": "#section4 h1" },
+        { "text": "2nd Semester", "location": "#projekt1 p:nth-of-type(1)" },
+        { "text": "&lt;Hair Creations by Gaia/&gt;", "location": "#projekt1 h2" },
+        { "text": "Exam Project", "location": "#projekt1 p:nth-of-type(2)" },
+        { "text": "My main responsibility for this project was to create structured code using Astro, develop the database in Supabase, and take photos for the website and social media content.", "location": "#projekt1 p:nth-of-type(3)" },
+        { "text": "Grade: 12", "location": "#projekt1 p:nth-of-type(4)" },
+        { "text": "&lt;View Project/&gt;", "location": "#projekt1 .btn a" },
+        { "text": "3rd Semester", "location": "#projekt2 p:nth-of-type(1)" },
+        { "text": "&lt;To Do App/&gt;", "location": "#projekt2 h2" },
+        { "text": "Theme: Frontend Logic", "location": "#projekt2 p:nth-of-type(2)" },
+        { "text": "This project was my final task in the first part of the frontend elective course, focusing on understanding JavaScript better.", "location": "#projekt2 p:nth-of-type(3)" },
+        { "text": "&lt;View Project/&gt;", "location": "#projekt2 .btn a" },
+        { "text": "1st Semester", "location": "#projekt3 p:nth-of-type(1)" },
+        { "text": "&lt;Aabenbar/&gt;", "location": "#projekt3 h2" },
+        { "text": "Theme 5: Content", "location": "#projekt3 p:nth-of-type(2)" },
+        { "text": "In this theme, we were introduced to content production and redesign, where we worked with Adobe Premiere Pro and filmed and edited an interview. We also had our first case where we had to redesign an existing site. My task was to film, take photos, and create a 'Book Table' form for the website.", "location": "#projekt3 p:nth-of-type(3)" },
+        { "text": "&lt;View Project/&gt;", "location": "#projekt3 .btn-container .btn a" },
+        { "text": "&lt;Watch Video/&gt;", "location": "#projekt3 .btn-container .btn button" },
+        { "text": "1st Semester", "location": "#projekt4 p:nth-of-type(1)" },
+        { "text": "&lt;The Hungry Axolotl/&gt;", "location": "#projekt4 h2" },
+        { "text": "Theme 4: Animation", "location": "#projekt4 p:nth-of-type(2)" },
+        { "text": "In this theme, we were introduced to JavaScript, and I used it to animate figures and create small interactive elements on a webpage.", "location": "#projekt4 p:nth-of-type(3)" },
+        { "text": "&lt;View Project/&gt;", "location": "#projekt4 .btn a" },
+        { "text": "&lt;Contact Me/&gt;", "location": "#section5 h1" },
+        { "text": "Does all of this sound exciting for your company? If you are looking for a passionate frontend designer and developer as an intern for August, feel free to contact me via email or LinkedIn.", "location": "#section5 p" }
 
+      ]
+    }
   }
   

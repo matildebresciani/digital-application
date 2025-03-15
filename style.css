@@ -379,11 +379,10 @@ header {
     margin-inline: auto;
     border: 1px solid var(--primary-green);
     text-align: center;
-
-    /* Skjul dropdown-knappen på desktop */
-button {
-    display: none;
-}
+    
+    * {
+        transition: color 0.3s ease;
+    }
 
 /* Navigation */
 ul {
@@ -405,9 +404,30 @@ a:hover {
     text-decoration: underline;
 }
 
-a, button {
-    transition: color 0.3s ease;
+
+#language-switcher {
+    display: flex; /* Ensure it's displayed as a horizontal menu on desktop */
+    gap: 0.3rem;
+
+    * {
+        color: var(--primary-green); /* Same color as the navigation links */
+    }
+
+    button {
+        background-color: transparent; /* Remove background color for consistency */
+        border: none; /* No border for buttons */
+        cursor: pointer; /* Pointer cursor on hover */
+        font-size: 1rem; /* Same font size as the links */
+
+        &:hover {
+            text-decoration: underline;  
+        }
+    }
 }
+
+
+
+
 
 }
 
@@ -674,6 +694,8 @@ a, button {
 #projekt1 .btn , #projekt2 .btn {
     margin-left: 0;
 }
-
+#nav-toggle {
+    display: none;
+}
 
 }
