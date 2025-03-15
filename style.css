@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-family: var(--main-font);
 }
 
 html {
@@ -13,16 +13,86 @@ html {
     --primary-light: #FAF8F2;
     --secondary-green: #ACB9AD;
     --secondary-light: #E0DCD1;
+    --bg-transparent: rgba(250, 248, 242, 0.2);
     --hover-transition: 0.4s ease;
     --scroll-transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    font-family: var(--main-font);
-    overflow-x: hidden;
     
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 body {
     background-color: var(--primary-light);
+    
 }
+
+#section1, #section2, #section3 {
+    scroll-snap-type: y proximity;
+    scroll-margin-top: 5em;
+
+}
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+
+@supports (animation-timeline: view()) {
+    @keyframes fade-in {
+      from { opacity: 0 }
+      to   { opacity: 1 }
+    }
+    
+    @keyframes shadow-in {
+    from { border: 0px solid var(--primary-green); }
+      to { border: 1px solid var(--primary-green); }
+    }
+    
+    header, header > * {
+      animation: fade-in auto linear both;
+      animation-timeline: scroll();
+      animation-range: 0% 100px;
+    }
+    
+    header {
+      animation-name: shadow-in;
+    }
+  }
+  
+
+/* header {
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 1rem;
+    z-index: 9999;
+    padding: 1rem;
+    width: min(400px, 80vw);
+    margin-inline: auto;
+    border: 1px solid var(--primary-green);
+
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;        
+
+        a {
+            color: var(--primary-green);
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+} */
+
+
 
 /* Scroll indicator container */
 .scroll-indicator {
@@ -134,6 +204,10 @@ img {
     justify-self: center;
 }
 
+#section3 {
+    margin-top: 10rem;
+}
+
 
 /* Kompetencer Grid - Ensretter card layout */
 .kompetencer_grid {
@@ -232,30 +306,32 @@ img {
 .btn {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    display: inline-block
+    display: inline-block;
+
+    a {
+        color: var(--primary-light);
+        text-decoration: none;
+        background-color: var(--primary-green);
+        border: 2px solid var(--primary-green);
+        padding: 8px 15px;
+        transition: var(--hover-transition);
+        display: inline-block;
+
+        &:hover {
+            color: var(--primary-light);
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+        }
+    }
+   
 }
 
-.btn a {
-    color: var(--primary-light);
-    text-decoration: none;
-    background-color: var(--primary-green);
-    border: 2px solid var(--primary-green);
-    padding: 8px 15px;
-    /* border-radius: 50px; */
-    transition: var(--hover-transition);
-    display: inline-block
-}
-
-
-.btn:hover a{
-    color: var(--primary-green);
-    background-color: var(--primary-light);
-}
 
 .icon_container {
     padding: 1.5rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -280,9 +356,97 @@ img {
     color: #81987F;
 }
 
+header {
+    background-color: var(--bg-transparent);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 1rem;
+    z-index: 9999;
+    padding: 1rem;
+    width: min(600px, 80vw);
+    margin-inline: auto;
+    border: 1px solid var(--primary-green);
+    text-align: center;
+}
+
+/* Skjul dropdown-knappen på desktop */
+button {
+    display: none;
+
+}
+
+
+
+/* Navigation */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--primary-green);
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 
 @media (max-width: 768px) {
+
+    header {
+        button {
+            display: flex;
+            width: 100%;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        button.open .arrow {
+            transform: rotate(180deg);
+        }
+    
+        ul {
+            display: none;
+            flex-direction: column;
+            background-color: var(--bg-transparent);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--primary-green);
+            padding: 0.5rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+
+            li {
+                padding: 1rem;
+            }
+        }
+    
+        ul.open {
+            display: flex;
+        }
+    }
+
+
 
 
     #section1 h1 {
@@ -298,7 +462,7 @@ img {
         margin-bottom: 1.5rem;
     }
     #section1 div {
-        display: flex;
+        display: grid;
         justify-content: center;
     }
 

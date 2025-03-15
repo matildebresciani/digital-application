@@ -66,3 +66,47 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkScroll);
   checkScroll(); // Kør ved load for at fange allerede synlige kort
 });
+
+const sections = document.querySelectorAll("section"); // Henter alle sektioner
+const activeSection = document.getElementById("active-section");
+const navMenu = document.getElementById("nav-menu");
+const navToggle = document.getElementById("nav-toggle");
+
+// Funktion til at finde den aktuelle sektion i viewporten
+function updateActiveSection() {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id"); // Få fat i sektionens ID
+    }
+  });
+
+  if (current) {
+    const activeLink = document.querySelector(`a[href="#${current}"]`);
+    if (activeLink) {
+      activeSection.textContent = activeLink.textContent; // Opdater header
+    }
+  }
+}
+
+// Kør funktionen ved scroll
+window.addEventListener("scroll", updateActiveSection);
+updateActiveSection(); // Kør ved load for at sætte startværdien
+
+// Dropdown-menu funktionalitet
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+  navToggle.classList.toggle("open");
+});
+
+// Luk menu og opdater aktivt punkt ved klik
+document.querySelectorAll("#nav-menu a").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    activeSection.textContent = e.target.textContent;
+    navMenu.classList.remove("open");
+    navToggle.classList.remove("open");
+  });
+});

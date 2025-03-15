@@ -33,174 +33,219 @@
   </head>
   <body>
     <div class="scroll-indicator"></div>
-    <header></header>
+    <!-- <header>
+      <ul>
+        <li>
+          <a href="#section2">Om Mig</a>
+        </li>
+        <li>
+          <a href="#section3">Kompetencer</a>
+        </li>
+        <li>
+          <a href="#section4">Portfolio</a>
+        </li>
+        <li>
+          <a href="#section5">Kontakt</a>
+        </li>
+      </ul>
+    </header> -->
+    <header>
+      <button id="nav-toggle">
+        <span id="active-section">Om Mig</span>
+        <span class="arrow">▼</span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="#section2">Om Mig</a></li>
+        <li><a href="#section3">Kompetencer</a></li>
+        <li><a href="#section4">Portfolio</a></li>
+        <li><a href="#section5">Kontakt</a></li>
+      </ul>
+    </header>
+
     <main>
       <section id="section1">
-        <h1>&lt;Matilde Bresciani/&gt;</h1>
-        <p>Multimediedesigner</p>
-        <p>Frontend Udvikling</p>
-        <p>Frontend Design</p>
         <div>
-          <img src="img/portrait2.jpg" alt="billede af mig" />
+          <h1>&lt;Matilde Bresciani/&gt;</h1>
+          <p>Multimediedesigner</p>
+          <p>Frontend Udvikling</p>
+          <p>Frontend Design</p>
+          <div>
+            <img src="img/portrait2.jpg" alt="billede af mig" />
+          </div>
         </div>
       </section>
       <section id="section2">
-        <h1>&lt;Hvem er jeg?/&gt;</h1>
-        <div class="section2_grid">
-          <img src="img/portrait3.jpg" alt="Portræt" />
-          <p>
-            Hej, jeg hedder Matilde, og jeg er en
-            <strong>multimediedesigner</strong> med en passion for
-            <strong>frontend udvikling</strong> og
-            <strong>frontend design</strong>. Jeg brænder for at udvikle
-            brugervenlige digitale løsninger, og dette er noget jeg drømmer om
-            at beskæftige mig med i mit 10-ugers praktikforløb, som jeg skal i
-            fra den 25. august til den 30. oktober. Jeg har erfaring med
-            <strong>HTML, CSS, JavaScript</strong> og værktøjer som
-            <strong>Figma</strong> og <strong>Visual Studio Code</strong>, og
-            jeg er altid ivrig efter at lære nye teknologier og metoder. Jeg ser
-            frem til at bruge min kreativitet og tekniske færdigheder i et
-            professionelt miljø, hvor jeg kan udvikle mig og bidrage til
-            spændende frontend-projekter.
-          </p>
+        <div>
+          <h1>&lt;Hvem er jeg?/&gt;</h1>
+          <div class="section2_grid">
+            <img src="img/portrait3.jpg" alt="Portræt" />
+            <p>
+              Hej, jeg hedder Matilde, og jeg er en
+              <strong>multimediedesigner</strong> med en passion for
+              <strong>frontend udvikling</strong> og
+              <strong>frontend design</strong>. Jeg brænder for at udvikle
+              brugervenlige digitale løsninger, og dette er noget jeg drømmer om
+              at beskæftige mig med i mit 10-ugers praktikforløb, som jeg skal i
+              fra den 25. august til den 30. oktober. Jeg har erfaring med
+              <strong>HTML, CSS, JavaScript</strong> og værktøjer som
+              <strong>Figma</strong> og <strong>Visual Studio Code</strong>, og
+              jeg er altid ivrig efter at lære nye teknologier og metoder. Jeg
+              ser frem til at bruge min kreativitet og tekniske færdigheder i et
+              professionelt miljø, hvor jeg kan udvikle mig og bidrage til
+              spændende frontend-projekter.
+            </p>
+          </div>
         </div>
       </section>
       <section id="section3">
-        <h1>&lt;Kompetencer/&gt;</h1>
-        <div class="kompetencer_grid">
-          <div class="kompetencer_card">
-            <h3>&lt;VS Code/&gt;</h3>
-            <p>
-              Jeg anvender Visual Studio Code som min primære kodeeditor og gør
-              brug af relevante extensions, såsom <strong>Prettier</strong> og
-              <strong>Figma for VS Code</strong>, for at optimere min
-              arbejdsproces.
-            </p>
-          </div>
-          <div class="kompetencer_card">
-            <h3>&lt;HTML/&gt;</h3>
-            <p>
-              Jeg bruger HTML for at skabe en struktureret kode, hvilket gør det
-              nemmere at arbejde med CSS og JavaScript.
-            </p>
-          </div>
-          <div class="kompetencer_card">
-            <h3>&lt;CSS/&gt;</h3>
-            <p>
-              Jeg styler mine sider med CSS, hvor benytter teknikker som Flexbox
-              og Grid til at skabe responsive layouts gennem media og container
-              queries. Derudover arbejder jeg med CSS variable/custom properties
-              for at sikre en ensartet stil og letlæselig kode.
-            </p>
-          </div>
-          <div class="kompetencer_card">
-            <h3>&lt;JavaScript/&gt;</h3>
-            <p>
-              Jeg anvender JavaScript til at gøre mine projekter interaktive og
-              arbejder herunder med funktioner, variabler og moduler for at
-              holde min kode struktureret.
-            </p>
-          </div>
-          <div class="kompetencer_card">
-            <h3>&lt;Astro/&gt;</h3>
-            <p>
-              Til større projekter benytter jeg Astro, især når der arbejdes i
-              teams, da det gør komponentbaseret kodning og optimering af
-              arbejdsprocesser langt mere effektivt.
-            </p>
-          </div>
-          <div class="kompetencer_card">
-            <h3>&lt;Git & GitHub/&gt;</h3>
-            <p>
-              En fast del af min rutine når jeg koder, er at bruge Git og
-              GitHub. Det bruger jeg til at holde styr på kodeændringer, samt at
-              det gør det nemt at gemme, dele og samarbejde om projekter. Jeg
-              har erfaring med branches og push/pull requests for at sikre en
-              arbejdsproces uden for mange konflikter.
-            </p>
-          </div>
-          <div class="kompetencer_card">
-            <h3>&lt;Netlify/&gt;</h3>
-            <p>
-              Mine projekter plejer jeg at hoste på Netflify, hvilket sikrer en
-              nem deployment-proces med automatisk opdatering fra Git.
-            </p>
-          </div>
-          <div class="kompetencer_card">
-            <h3>&lt;Figma/&gt;</h3>
-            <p>
-              Som en del af min uddannelse har jeg arbejdet med Figma til
-              design, prototyper og UI-komponenter. Jeg har erfaring med
-              designsystemer, wireframes, sitemaps og moodboards for at sikre en
-              gennemarbejdet og brugervenlig løsning. Derudover anvender jeg
-              også Figma's Dev Mode som frontend designer, når jeg skal
-              implementere et figma design i kode.
-            </p>
+        <div>
+          <h1>&lt;Kompetencer/&gt;</h1>
+          <div class="kompetencer_grid">
+            <div class="kompetencer_card">
+              <h3>&lt;VS Code/&gt;</h3>
+              <p>
+                Jeg anvender Visual Studio Code som min primære kodeeditor og
+                gør brug af relevante extensions, såsom
+                <strong>Prettier</strong> og <strong>Figma for VS Code</strong>,
+                for at optimere min arbejdsproces.
+              </p>
+            </div>
+            <div class="kompetencer_card">
+              <h3>&lt;HTML/&gt;</h3>
+              <p>
+                Jeg bruger HTML for at skabe en struktureret kode, hvilket gør
+                det nemmere at arbejde med CSS og JavaScript.
+              </p>
+            </div>
+            <div class="kompetencer_card">
+              <h3>&lt;CSS/&gt;</h3>
+              <p>
+                Jeg styler mine sider med CSS, hvor benytter teknikker som
+                Flexbox og Grid til at skabe responsive layouts gennem media og
+                container queries. Derudover arbejder jeg med CSS
+                variable/custom properties for at sikre en ensartet stil og
+                letlæselig kode.
+              </p>
+            </div>
+            <div class="kompetencer_card">
+              <h3>&lt;JavaScript/&gt;</h3>
+              <p>
+                Jeg anvender JavaScript til at gøre mine projekter interaktive
+                og arbejder herunder med funktioner, variabler og moduler for at
+                holde min kode struktureret.
+              </p>
+            </div>
+            <div class="kompetencer_card">
+              <h3>&lt;Astro/&gt;</h3>
+              <p>
+                Til større projekter benytter jeg Astro, især når der arbejdes i
+                teams, da det gør komponentbaseret kodning og optimering af
+                arbejdsprocesser langt mere effektivt.
+              </p>
+            </div>
+            <div class="kompetencer_card">
+              <h3>&lt;Git & GitHub/&gt;</h3>
+              <p>
+                En fast del af min rutine når jeg koder, er at bruge Git og
+                GitHub. Det bruger jeg til at holde styr på kodeændringer, samt
+                at det gør det nemt at gemme, dele og samarbejde om projekter.
+                Jeg har erfaring med branches og push/pull requests for at sikre
+                en arbejdsproces uden for mange konflikter.
+              </p>
+            </div>
+            <div class="kompetencer_card">
+              <h3>&lt;Netlify/&gt;</h3>
+              <p>
+                Mine projekter plejer jeg at hoste på Netflify, hvilket sikrer
+                en nem deployment-proces med automatisk opdatering fra Git.
+              </p>
+            </div>
+            <div class="kompetencer_card">
+              <h3>&lt;Figma/&gt;</h3>
+              <p>
+                Som en del af min uddannelse har jeg arbejdet med Figma til
+                design, prototyper og UI-komponenter. Jeg har erfaring med
+                designsystemer, wireframes, sitemaps og moodboards for at sikre
+                en gennemarbejdet og brugervenlig løsning. Derudover anvender
+                jeg også Figma's Dev Mode som frontend designer, når jeg skal
+                implementere et figma design i kode.
+              </p>
+            </div>
+            <div class="kompetencer_card"></div>
           </div>
         </div>
       </section>
       <section id="section4">
-        <h1>&lt;Tidligere Projekter/&gt;</h1>
+        <div>
+          <h1>&lt;Portfolio/&gt;</h1>
+        </div>
       </section>
-      <div id="projekt1">
-        <div class="projekt_content">
-          <p>2. Semester</p>
-          <h2>&lt;Hair Creations by Gaia/&gt;</h2>
-          <p>Eksamensprojekt</p>
-          <p>
-            Mit primære ansvar i dette projekt har været at skabe en
-            struktureret kode ved hjælp af Astro, udvikle databasen i Supabase
-            og tage billeder der kunne bruges på hjemmesiden og som SoMe
-            content.
-          </p>
-          <p>Karakter: 12</p>
-          <div class="btn">
-            <a href="https://haircreationsbygaia.netlify.app/" target="_blank"
-              >&lt;Vis Projekt/&gt;</a
-            >
-          </div>
-        </div>
-      </div>
-      <div id="projekt2">
-        <div class="projekt_content">
-          <p>3. Semester</p>
-          <h2>&lt;To Do App/&gt;</h2>
-          <p>
-            Afsluttende opgave på første forløb på frontend valgfaget med fokus
-            på at få en bedre forståelse for JavaScript.
-          </p>
-          <p>Tema: Frontend Logic</p>
-          <div class="btn">
-            <a href="https://matilde-to-do-app.netlify.app/" target="_blank"
-              >&lt;Vis Projekt/&gt;</a
-            >
-          </div>
-        </div>
-      </div>
-      <section id="section5">
-        <h1>&lt;Kontakt Mig/&gt;</h1>
-        <p>
-          Lyder alt dette spændende for jeres virksomhed? Hvis i søger en
-          passioneret frontend designer og udvikler som praktikant til august,
-          er i meget velkomne til at kontakte mig på min mail eller LinkedIn.
-        </p>
-
-        <div class="icon_container">
-          <div class="link_container">
-            <div class="icon">
-              <a href="mailto:matildepio@hotmail.dk" target="_blank">
-                <img src="img/email.svg" alt="" />
-              </a>
+      <section id="projekt1">
+        <div>
+          <div class="projekt_content">
+            <p>2. Semester</p>
+            <h2>&lt;Hair Creations by Gaia/&gt;</h2>
+            <p>Eksamensprojekt</p>
+            <p>
+              Mit primære ansvar i dette projekt har været at skabe en
+              struktureret kode ved hjælp af Astro, udvikle databasen i Supabase
+              og tage billeder der kunne bruges på hjemmesiden og som SoMe
+              content.
+            </p>
+            <p>Karakter: 12</p>
+            <div class="btn">
+              <a href="https://haircreationsbygaia.netlify.app/" target="_blank"
+                >&lt;Vis Projekt/&gt;</a
+              >
             </div>
           </div>
-          <div class="link_container">
-            <div class="icon">
-              <a
-                href="https://www.linkedin.com/in/matilde-bresciani-3942872b5/"
-                target="_blank"
+        </div>
+      </section>
+
+      <section id="projekt2">
+        <div>
+          <div class="projekt_content">
+            <p>3. Semester</p>
+            <h2>&lt;To Do App/&gt;</h2>
+            <p>
+              Afsluttende opgave på første forløb på frontend valgfaget med
+              fokus på at få en bedre forståelse for JavaScript.
+            </p>
+            <p>Tema: Frontend Logic</p>
+            <div class="btn">
+              <a href="https://matilde-to-do-app.netlify.app/" target="_blank"
+                >&lt;Vis Projekt/&gt;</a
               >
-                <img src="img/linkedin.svg" alt="" />
-              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section5">
+        <div>
+          <h1>&lt;Kontakt Mig/&gt;</h1>
+          <p>
+            Lyder alt dette spændende for jeres virksomhed? Hvis i søger en
+            passioneret frontend designer og udvikler som praktikant til august,
+            er i meget velkomne til at kontakte mig på min mail eller LinkedIn.
+          </p>
+
+          <div class="icon_container">
+            <div class="link_container">
+              <div class="icon">
+                <a href="mailto:matildepio@hotmail.dk" target="_blank">
+                  <img src="img/email.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="link_container">
+              <div class="icon">
+                <a
+                  href="https://www.linkedin.com/in/matilde-bresciani-3942872b5/"
+                  target="_blank"
+                >
+                  <img src="img/linkedin.svg" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
