@@ -18,7 +18,7 @@ html {
     --scroll-transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 body {
@@ -223,6 +223,8 @@ img {
     opacity: 0;
     transform: translateY(40px); /* Starter lidt nede */
     transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+
+
 }
 
 
@@ -295,6 +297,17 @@ img {
 #projekt3 {
     background-image: url(img/aabenbar.jpg);
     background-position: 40%;
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .btn {
+
+            margin: 0;
+        }
+    }
 }
 
 #projekt4 {
